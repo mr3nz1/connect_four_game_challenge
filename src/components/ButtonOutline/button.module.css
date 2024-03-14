@@ -1,0 +1,44 @@
+.btn_dark {
+  background-color: transparent;
+  border: none;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.btn_dark span {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn_dark span:hover {
+  text-decoration: underline;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.btn span {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

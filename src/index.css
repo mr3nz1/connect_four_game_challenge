@@ -10,4 +10,11 @@ html {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box; /* Add this line to include border-box */
+  line-height: 1.5;
+}
+
+p,
+th,
+td {
+  font-size: 14px;
 }

@@ -1,20 +1,18 @@
 import styles from "./button.module.css";
-
-import { Arrow } from "../../assets/icons";
+import { Link } from "react-router-dom";
 
 export default function Button({
   buttonText,
   isDark,
 }: {
   buttonText: string;
-  isDark: boolean;
+  isDark?: boolean;
 }) {
   return (
     <>
-      <button className={isDark ? styles.btn_dark : styles.btn}>
-        <span>{buttonText}</span>
-        <Arrow color={isDark ? "black" : "white"} />
-      </button>
+      <Link className={isDark ? styles.darkBtn : styles.btn} to="">
+        {buttonText}
+      </Link>
     </>
   );
 }

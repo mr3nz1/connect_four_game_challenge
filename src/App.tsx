@@ -2,8 +2,9 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./pages/Home.tsx";
-import Features from "./pages/Features.tsx";
 import Pricing from "./pages/Pricing.tsx";
+import Stories from "./pages/Stories.tsx";
+import Features from "./pages/Features.tsx";
 
 export default function App() {
   const router = createBrowserRouter([
@@ -12,12 +13,16 @@ export default function App() {
       element: <Home />,
     },
     {
-      path: "/features",
-      element: <Features />,
+      path: "/stories",
+      element: <Stories />,
     },
     {
       path: "/pricing",
       element: <Pricing />,
+    },
+    {
+      path: "/features",
+      element: <Features />,
     },
   ]);
   return (

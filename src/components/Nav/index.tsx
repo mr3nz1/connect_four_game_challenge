@@ -1,6 +1,7 @@
 import styles from "./nav.module.css";
 import { Link } from "react-router-dom";
 import { Logo } from "../../assets/icons";
+import Button from "../Button";
 
 export default function Nav() {
   return (
@@ -9,7 +10,7 @@ export default function Nav() {
         <Logo color="black" />
       </Link>
       <div className={styles.container}>
-        <Link className={styles.link} to="">
+        <Link className={styles.link} to="/stories">
           Stories
         </Link>
         <Link className={styles.link} to="/features">
@@ -19,9 +20,7 @@ export default function Nav() {
           Pricing
         </Link>
       </div>
-      <Link className={styles.btn} to="">
-        Get an invite
-      </Link>
+      <Button buttonText="get an invite" />
     </nav>
   );
 }

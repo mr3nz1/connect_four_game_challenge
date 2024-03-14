@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding-bottom: 8em;
+}
+
+.container .title {
+  text-align: center;
+  font-size: x-large;
+  text-transform: uppercase;
+}
+
+.tableContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 2px solid black;
+  padding: 1em 4em;
+  text-transform: uppercase;
+}
+
+td {
+  text-align: center;
+  font-weight: bold;
+}
+
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  padding: 1.5em 4em;
+  text-transform: uppercasez;
+}
+
+.check {
+  text-align: center;
+}

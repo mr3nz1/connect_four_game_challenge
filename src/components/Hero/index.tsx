@@ -1,5 +1,5 @@
 import styles from "./hero.module.css";
-import Button from "../Button";
+import Button from "../ButtonOutline";
 
 export default function Hero({
   title,
@@ -12,7 +12,7 @@ export default function Hero({
 }: {
   title: string;
   description: string;
-  buttonText: string;
+  buttonText?: string;
   isReverse: boolean;
   image: string;
   isDark: boolean;
@@ -24,7 +24,7 @@ export default function Hero({
         <div className={isDark ? styles.col1_dark : styles.col1_light}>
           <h1 className={styles.h1}>{title}</h1>
           <p className={styles.p}>{description}</p>
-          <Button buttonText={buttonText} isDark={!isDark} />
+          {buttonText && <Button buttonText={buttonText} isDark={!isDark} />}
 
           {isColoredLineOpen && (
             <div className={styles.colored_line}>

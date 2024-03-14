@@ -27,16 +27,3 @@
   color: #dfdfdf;
   transition: 0.2s ease;
 }
-
-.btn {
-  text-decoration: none;
-  color: white;
-  background-color: "black";
-  padding: 0.5em 2em;
-  background-color: black;
-}
-
-.btn:hover {
-  background-color: #7c7c7c;
-  transition: 0.2s ease;
-}

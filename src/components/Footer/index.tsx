@@ -7,7 +7,7 @@ import {
   YouTube,
   Logo,
 } from "../../assets/icons";
-import Button from "../Button";
+import Button from "../ButtonOutline";
 
 export default function Footer() {
   return (

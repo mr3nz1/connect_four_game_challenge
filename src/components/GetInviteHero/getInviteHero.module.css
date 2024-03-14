@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  padding: 4em;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container img {
+    width: 100%;
+}
+
+.container div {
+    width: 100%;
+  /* position: absolute; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container div h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: normal;
+  width: 400px;
+}

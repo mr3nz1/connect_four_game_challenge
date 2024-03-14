@@ -5,10 +5,12 @@ export default function Card({
   image,
   title,
   author,
+  date,
 }: {
   image: string;
   title: string;
   author: string;
+  date?: string;
 }) {
   return (
     <>
@@ -18,6 +20,7 @@ export default function Card({
 
           <div>
             <div className={styles.textContainer}>
+              {date && <p>{date}</p>}
               <h2>{title}</h2>
               <p>{author}</p>
             </div>

@@ -2,7 +2,7 @@ import Hero from "../components/Hero";
 import Nav from "../components/Nav";
 import CardContainer from "../components/CardContainer";
 import Card from "../components/Card";
-import Features from "../components/Features";
+import FeaturesContainer from "../components/FeaturesContainer";
 
 import createAndShareImage from "../assets/home/desktop/create-and-share.jpg";
 import designedForEveryOneImage from "../assets/home/desktop/designed-for-everyone.jpg";
@@ -73,7 +73,7 @@ export default function Home() {
         />
       </CardContainer>
 
-      <Features />
+      <FeaturesContainer numberOfFeatures={3} />
 
       <Footer />
     </>

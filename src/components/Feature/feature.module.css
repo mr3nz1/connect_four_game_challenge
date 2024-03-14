@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+  gap: 2em;
+}
+
+.container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.container div h2 {
+  font-weight: bold;
+  font-size: large;
+}
+
+.container div p {
+  text-align: center;
+  color: #4e4e4e;
+  font-size: 14px;
+}
+
+.image {
+  width: 75px;
+  height: 60px;
+}
