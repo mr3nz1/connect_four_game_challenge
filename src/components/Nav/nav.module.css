@@ -27,3 +27,24 @@
   color: #dfdfdf;
   transition: 0.2s ease;
 }
+
+.menu {
+  display: none;
+}
+
+@media only screen and (max-width: 680px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav > .container,
+  .nav > .getInvite {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
+}

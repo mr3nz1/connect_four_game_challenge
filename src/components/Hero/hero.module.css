@@ -134,3 +134,280 @@
   width: 4px;
   background-image: linear-gradient(to bottom, #5a77ff, #ffc593);
 }
+
+@media only screen and (max-width: 1250px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .containerReverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .col1_dark {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2em;
+    background-color: black;
+    padding: 4em 6em;
+    position: relative;
+  }
+
+  .col1_dark h1 {
+    color: white;
+    font-size: 2em;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  .col1_dark .p {
+    color: #dfdfdf;
+    font-weight: 180;
+  }
+
+  .col1_dark .btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .col1_dark .btn span {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .col1_dark .btn span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .col1_light {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2em;
+    background-color: white;
+    padding: 4em 6em;
+    position: relative;
+    color: black;
+  }
+
+  .col1_light h1 {
+    color: black;
+    font-size: 2em;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  .col1_light p {
+    color: #4e4e4e;
+    font-size: 14px;
+  }
+
+  .col1_light .btn {
+    background-color: transparent;
+    border: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .col1_light .btn span {
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .col1_light .btn span:hover {
+    text-decoration: underline;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+
+  .col2 {
+    flex: 4;
+    width: 100%;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .colored_line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .colored_line div {
+    content: " ";
+    height: 300px;
+    width: 4px;
+    background-image: linear-gradient(to bottom, #5a77ff, #ffc593);
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .containerReverse {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .col1_dark {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: black;
+    gap: 1em;
+    padding: 2em 4em;
+    position: relative;
+  }
+
+  .col1_dark h1 {
+    color: white;
+    font-size: 2em;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  .col1_dark .p {
+    color: #dfdfdf;
+    font-weight: 180;
+  }
+
+  .col1_dark .btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .col1_dark .btn span {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .col1_dark .btn span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .col1_light {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: white;
+    gap: 1em;
+    padding: 2em 4em;
+    position: relative;
+    color: black;
+  }
+
+  .col1_light h1 {
+    color: black;
+    font-size: 2em;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  .col1_light p {
+    color: #4e4e4e;
+    font-size: 14px;
+  }
+
+  .col1_light .btn {
+    background-color: transparent;
+    border: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .col1_light .btn span {
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .col1_light .btn span:hover {
+    text-decoration: underline;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+
+  .col2 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .colored_line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .colored_line div {
+    content: " ";
+    height: 300px;
+    width: 4px;
+    background-image: linear-gradient(to bottom, #5a77ff, #ffc593);
+  }
+}

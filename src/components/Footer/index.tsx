@@ -24,6 +24,7 @@ export default function Footer() {
             <Instagram color="white" />
           </div>
         </div>
+        
         <div className={styles.col2}>
           <a className={styles.link} href="">
             home

@@ -1,5 +1,5 @@
 import Nav from "../components/Nav";
-import FeaturesHero from "../components/FeaturesHero";
+import StoriesHero from "../components/StoriesHero";
 import CardContainer from "../components/CardContainer";
 import Card from "../components/Card";
 
@@ -15,7 +15,7 @@ export default function Stories() {
   return (
     <>
       <Nav />
-      <FeaturesHero />
+      <StoriesHero />
       <CardContainer>
         {stories.map(
           ({
@@ -29,8 +29,14 @@ export default function Stories() {
             author: string;
             image: string;
           }) => {
-            return (  
-              <Card key={title} image={image} title={title} author={author} date={date} />
+            return (
+              <Card
+                key={title}
+                image={image}
+                title={title}
+                author={author}
+                date={date}
+              />
             );
           }
         )}

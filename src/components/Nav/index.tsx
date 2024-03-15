@@ -1,6 +1,6 @@
 import styles from "./nav.module.css";
 import { Link } from "react-router-dom";
-import { Logo } from "../../assets/icons";
+import { Logo, Menu } from "../../assets/icons";
 import Button from "../Button";
 
 export default function Nav() {
@@ -20,7 +20,13 @@ export default function Nav() {
           Pricing
         </Link>
       </div>
-      <Button buttonText="get an invite" />
+      <div className={styles.getInvite}>
+        <Button buttonText="get an invite" />
+      </div>
+
+      <div className={styles.menu}>
+        <Menu />
+      </div>
     </nav>
   );
 }

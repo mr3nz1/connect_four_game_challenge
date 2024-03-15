@@ -2,11 +2,14 @@ import styles from "./featuresHero.module.css";
 import heroImage from "../../assets/stories/desktop/moon-of-appalacia.jpg";
 import Button from "../ButtonOutline";
 
-export default function FeaturesHero() {
+export default function StoriesHero() {
   return (
     <>
-      <div className={styles.container}>
-        <img src={heroImage} alt="" />
+      <div
+        className={styles.container}
+        style={{ backgroundImage: `url(${heroImage})` }}
+      >
+        {/* <img src={heroImage} alt="" /> */}
 
         <div>
           <div className={styles.textContainer}>

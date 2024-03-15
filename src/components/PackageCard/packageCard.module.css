@@ -44,7 +44,7 @@
   position: relative;
 }
 
-.darkContainer > div > h2 {
+.darkContainer > div > div > h2 {
   color: white;
 }
 
@@ -82,3 +82,90 @@
   top: 0;
   left: 0;
 }
+
+@media only screen and (max-width: 1250px) {
+  .lightContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2em;
+    background-color: #dfdfdf48;
+    padding: 4em 2em;
+    text-align: start;
+  }
+
+  .darkContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2em;
+    background-color: black;
+    padding: 4em 2em;
+    position: relative;
+    text-align: start;
+  }
+
+  .packageInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 1em;
+    /* text */
+  }
+
+  .lightContainer .priceContainer,
+  .darkContainer .priceContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1em;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .lightContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 2em;
+    background-color: #dfdfdf48;
+    padding: 4em 2em;
+    text-align: start;
+  }
+
+  .darkContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 2em;
+    background-color: black;
+    padding: 4em 2em;
+    position: relative;
+    text-align: start;
+  }
+
+  .packageInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 1em;
+    /* text */
+  }
+
+  .lightContainer .priceContainer,
+  .darkContainer .priceContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1em;
+  }
+}
+

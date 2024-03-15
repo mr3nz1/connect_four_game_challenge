@@ -8,13 +8,55 @@ import createAndShareImage from "../assets/home/desktop/create-and-share.jpg";
 import designedForEveryOneImage from "../assets/home/desktop/designed-for-everyone.jpg";
 import beautifulStoriesImage from "../assets/home/desktop/beautiful-stories.jpg";
 
+import createAndShareMobileImage from "../assets/home/tablet/create-and-share.jpg";
+import designedForEveryOneMobileImage from "../assets/home/tablet/designed-for-everyone.jpg";
+import beautifulStoriesMobileImage from "../assets/home/tablet/beautiful-stories.jpg";
+
 import mountainsImage from "../assets/stories/desktop/mountains.jpg";
 import cityScapesImage from "../assets/stories/desktop/cityscapes.jpg";
 import voyageImage from "../assets/stories/desktop/18-days-voyage.jpg";
 import architectureImage from "../assets/stories/desktop/architecturals.jpg";
 import Footer from "../components/Footer";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [appropriateImages, setAppropriateImages] = useState({
+    createAndShareImage: createAndShareImage,
+    designedForEveryOneImage: designedForEveryOneImage,
+    beautifulStoriesImage: beautifulStoriesImage,
+  });
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setScreenWidth(window.innerWidth);
+    });
+  }, []);
+
+  useEffect(() => {
+    if (screenWidth <= 680) {
+      return setAppropriateImages({
+        createAndShareImage: createAndShareImage,
+        designedForEveryOneImage: designedForEveryOneImage,
+        beautifulStoriesImage: beautifulStoriesImage,
+      });
+    }
+
+    if (screenWidth <= 1250) {
+      return setAppropriateImages({
+        createAndShareImage: createAndShareMobileImage,
+        designedForEveryOneImage: designedForEveryOneMobileImage,
+        beautifulStoriesImage: beautifulStoriesMobileImage,
+      });
+    }
+
+    return setAppropriateImages({
+      createAndShareImage: createAndShareImage,
+      designedForEveryOneImage: designedForEveryOneImage,
+      beautifulStoriesImage: beautifulStoriesImage,
+    });
+  }, [screenWidth]);
+
   return (
     <>
       <Nav />
@@ -25,7 +67,7 @@ export default function Home() {
             others."
         buttonText="Get an invite"
         isReverse={false}
-        image={createAndShareImage}
+        image={appropriateImages["createAndShareImage"]}
         isDark={true}
         isColoredLineOpen={true}
       />
@@ -36,7 +78,7 @@ export default function Home() {
         with everyone."
         buttonText="View the stories"
         isReverse={true}
-        image={beautifulStoriesImage}
+        image={appropriateImages["beautifulStoriesImage"]}
         isDark={false}
         isColoredLineOpen={false}
       />
@@ -46,7 +88,7 @@ export default function Home() {
         tool is designed for photographers of all levels, brands, businesses you name it."
         buttonText="View the stories"
         isReverse={false}
-        image={designedForEveryOneImage}
+        image={appropriateImages["designedForEveryOneImage"]}
         isDark={true}
         isColoredLineOpen={false}
       />

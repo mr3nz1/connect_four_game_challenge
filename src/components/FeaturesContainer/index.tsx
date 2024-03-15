@@ -10,7 +10,11 @@ export default function Features({
 }) {
   return (
     <>
-      <div className={styles.container}>
+      <div
+        className={
+          numberOfFeatures > 3 ? styles.containerTwoCols : styles.container
+        }
+      >
         {features.slice(0, numberOfFeatures).map((feature) => {
           return (
             <Feature
