@@ -1,5 +1,8 @@
 import "./index.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createHashRouter,
+  RouterProvider,
+} from "react-router-dom";
 
 import Home from "./pages/Home.tsx";
 import Pricing from "./pages/Pricing.tsx";
@@ -7,7 +10,7 @@ import Stories from "./pages/Stories.tsx";
 import Features from "./pages/Features.tsx";
 
 export default function App() {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/",
       element: <Home />,
