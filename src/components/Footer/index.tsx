@@ -8,6 +8,7 @@ import {
   Logo,
 } from "../../assets/icons";
 import Button from "../ButtonOutline";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -24,20 +25,20 @@ export default function Footer() {
             <Instagram color="white" />
           </div>
         </div>
-        
+
         <div className={styles.col2}>
-          <a className={styles.link} href="">
+          <Link className={styles.link} to="/">
             home
-          </a>
-          <a className={styles.link} href="">
+          </Link>
+          <Link className={styles.link} to="/stories">
             stories
-          </a>
-          <a className={styles.link} href="">
+          </Link>
+          <Link className={styles.link} to="/features">
             features
-          </a>
-          <a className={styles.link} href="">
+          </Link>
+          <Link className={styles.link} to="/pricing">
             pricing
-          </a>
+          </Link>
         </div>
         <div className={styles.col3}>
           <Button isDark={false} buttonText="get an invite" />

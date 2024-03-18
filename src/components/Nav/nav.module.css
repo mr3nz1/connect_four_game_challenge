@@ -7,6 +7,9 @@
   padding: 1em;
   font-size: "14px";
   font-weight: "bold";
+  border-bottom: 1px solid #dfdfdf;
+  background-color: white;
+  z-index: 100;
 }
 
 .container {
@@ -32,11 +35,52 @@
   display: none;
 }
 
+.mobileNavList {
+  display: none;
+}
+
+.mobileNavListClosed {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1em;
+  padding: 2em 0em;
+  border-bottom: 1px solid #dfdfdf;
+  transition: 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 100%;
+  z-index: -1;
+}
+
 @media only screen and (max-width: 680px) {
+  .mobileNavList {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+    padding: 2em 0em;
+    border-bottom: 1px solid #dfdfdf;
+    transition: 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    margin-top: 3.5em;
+  }
+
   .nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 1.5em 2em;
+    position: relative;
   }
 
   .nav > .container,
@@ -46,5 +90,28 @@
 
   .menu {
     display: flex;
+  }
+
+  .mobileNavList > .mobileContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .mobileNavList > .mobileContainer > a {
+    font-size: large;
+  }
+
+  .lineSeparator {
+    height: 1px solid gray;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    margin: 0.5em 2em;
+  }
+
+  .getInvite > a {
+    font-size: large;
   }
 }
