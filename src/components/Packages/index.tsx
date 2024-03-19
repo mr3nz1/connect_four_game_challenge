@@ -31,6 +31,7 @@ export default function Packages() {
           {packages.map((item) => {
             return (
               <PackageCard
+                key={item.id}
                 title={item.title}
                 description={item.description}
                 price={isMonthly ? item.pricePerMonth : item.pricePerYear}

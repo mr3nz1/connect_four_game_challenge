@@ -1,17 +1,20 @@
 [
   {
+    "id": 1,
     "title": "Basic",
     "description": "Includes basic usage of our platform. Recommended for new and aspiring photographers.",
     "pricePerMonth": "$19.00",
     "pricePerYear": "$190.00"
   },
   {
+    "id": 2,
     "title": "Pro",
     "description": "More advanced features available. Recommended for photography veterans and professionals.",
     "pricePerMonth": "$99.00",
     "pricePerYear": "$990.00"
   },
   {
+    "id": 3,
     "title": "Business",
     "description": "Additional features available such as more detailed metrics. Recommended for business owners.",
     "pricePerMonth": "$99.00",

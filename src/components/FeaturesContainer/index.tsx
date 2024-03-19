@@ -18,6 +18,7 @@ export default function Features({
         {features.slice(0, numberOfFeatures).map((feature) => {
           return (
             <Feature
+              key={feature.id}
               title={feature.title}
               description={feature.description}
               image={feature.image}

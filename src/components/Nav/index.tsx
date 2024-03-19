@@ -7,8 +7,6 @@ import { useState } from "react";
 export default function Nav() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-  console.log(isNavOpen);
-
   return (
     <>
       <div className={styles.backColor}></div>

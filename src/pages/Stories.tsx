@@ -19,11 +19,13 @@ export default function Stories() {
       <CardContainer>
         {stories.map(
           ({
+            id,
             date,
             title,
             author,
             image,
           }: {
+            id: number;
             date: string;
             title: string;
             author: string;
@@ -31,7 +33,7 @@ export default function Stories() {
           }) => {
             return (
               <Card
-                key={title}
+                key={id}
                 image={image}
                 title={title}
                 author={author}
