@@ -12,19 +12,23 @@ export default function StoriesHero() {
         {/* <img src={heroImage} alt="" /> */}
 
         <div>
-          <div className={styles.textContainer}>
-            <p className={styles.tag}>Last month's featured story</p>
-            <h1>Hazy full moon of Appalachia</h1>
-            <p className={styles.date}>
+          <div className={`${styles.textContainer}`}>
+            <p className={`${styles.tag} hidden`}>
+              Last month's featured story
+            </p>
+            <h1 className=" hidden">Hazy full moon of Appalachia</h1>
+            <p className={`${styles.date} hidden`}>
               March 2nd 2020 <span>by John Appleseed</span>
             </p>
-            <p>
+            <p className="hidden">
               The dissected plateau area, while not actually made up of
               geological mountains, is popularly called "mountains," especially
               in eastern Kentucky and West Virginia, and while the ridges are
               not high, the terrain is extremely rugged.
             </p>
-            <Button isDark={false} buttonText="read the story" />
+            <span className="hidden">
+              <Button isDark={false} buttonText="read the story" />
+            </span>
           </div>
         </div>
       </div>

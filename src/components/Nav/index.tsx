@@ -10,7 +10,7 @@ export default function Nav() {
   return (
     <>
       <div className={styles.backColor}></div>
-      <nav className={styles.nav}>
+      <nav className={`${styles.nav}`}>
         <Link to="/">
           <Logo color="black" />
         </Link>

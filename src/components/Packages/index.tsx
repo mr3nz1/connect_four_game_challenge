@@ -9,7 +9,7 @@ export default function Packages() {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.toggleContainer}>
+        <div className={`${styles.toggleContainer} hidden`}>
           <p className={isMonthly ? styles.selected : styles.unselected}>
             Monthly
           </p>

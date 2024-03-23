@@ -12,7 +12,7 @@ export default function PackageList() {
         <div className={styles.tableContainer}>
           <table>
             <thead>
-              <tr className={styles.tr}>
+              <tr className={`${styles.tr} hidden`}>
                 <th>
                   <p>The features</p>
                 </th>
@@ -29,7 +29,7 @@ export default function PackageList() {
             </thead>
 
             <tbody>
-              <tr className={styles.tr}>
+              <tr className={`${styles.tr} hidden`}>
                 <td>Unlimited Story Posting</td>
                 <td className={styles.check}>
                   <img src={checkImage} />
@@ -41,7 +41,7 @@ export default function PackageList() {
                   <img src={checkImage} />
                 </td>
               </tr>
-              <tr className={styles.tr}>
+              <tr className={`${styles.tr} hidden`}>
                 <td>Unlimited Photo Upload</td>
                 <td className={styles.check}>
                   <img src={checkImage} />
@@ -53,7 +53,7 @@ export default function PackageList() {
                   <img src={checkImage} />
                 </td>
               </tr>
-              <tr className={styles.tr}>
+              <tr className={`${styles.tr} hidden`}>
                 <td>Embedding Custom Content</td>
                 <td></td>
                 <td className={styles.check}>
@@ -63,7 +63,7 @@ export default function PackageList() {
                   <img src={checkImage} />
                 </td>
               </tr>
-              <tr className={styles.tr}>
+              <tr className={`${styles.tr} hidden`}>
                 <td>Customize Metadata</td>
                 <td></td>
                 <td className={styles.check}>
@@ -73,7 +73,7 @@ export default function PackageList() {
                   <img src={checkImage} />
                 </td>
               </tr>
-              <tr className={styles.tr}>
+              <tr className={`${styles.tr} hidden`}>
                 <td>Advanced Metrics</td>
                 <td></td>
                 <td></td>
@@ -81,7 +81,7 @@ export default function PackageList() {
                   <img src={checkImage} />
                 </td>
               </tr>
-              <tr className={styles.tr}>
+              <tr className={`${styles.tr} hidden`}>
                 <td>Photo Downloads</td>
                 <td></td>
                 <td></td>
@@ -89,7 +89,7 @@ export default function PackageList() {
                   <img src={checkImage} />
                 </td>
               </tr>
-              <tr className={styles.tr}>
+              <tr className={`${styles.tr} hidden`}>
                 <td>Search Engine Indexing</td>
                 <td></td>
                 <td></td>
@@ -97,7 +97,7 @@ export default function PackageList() {
                   <img src={checkImage} />
                 </td>
               </tr>
-              <tr className={styles.tr}>
+              <tr className={`${styles.tr} hidden`}>
                 <td>Custom Analytics</td>
                 <td></td>
                 <td></td>

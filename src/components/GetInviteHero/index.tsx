@@ -12,8 +12,10 @@ export default function GetInviteHero() {
       >
         {/* <img src={image} alt="" /> */}
         <div>
-          <h1>We're in Beta. Get your invite today!</h1>
-          <Button isDark={false} buttonText="get an invite" />
+          <h1 className="hidden">We're in Beta. Get your invite today!</h1>
+          <span className="hidden">
+            <Button isDark={false} buttonText="get an invite" />
+          </span>
         </div>
       </div>
     </>

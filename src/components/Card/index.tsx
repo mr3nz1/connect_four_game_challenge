@@ -14,12 +14,12 @@ export default function Card({
 }) {
   return (
     <>
-      <div className={styles.container}>
+      <div className={`${styles.container}`}>
         <div>
           <img src={image} alt="" />
 
           <div>
-            <div className={styles.textContainer}>
+            <div className={`${styles.textContainer} hidden`}>
               {date && <p>{date}</p>}
               <h2>{title}</h2>
               <p>{author}</p>
@@ -27,9 +27,11 @@ export default function Card({
 
             <div className={styles.horizontalSeparator}></div>
 
-            <button>
+            <button className=" hidden">
               <span>Read Story</span>
-              <Arrow color="white" />
+              <div className={styles.arrowBtn}>
+                <Arrow color="white" />
+              </div>
             </button>
           </div>
         </div>

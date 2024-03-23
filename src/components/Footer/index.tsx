@@ -17,7 +17,7 @@ export default function Footer() {
         <div className={styles.col1}>
           <Logo color="white" />
 
-          <div>
+          <div className="hidden">
             <Facebook color="white" />
             <YouTube color="white" />
             <Twitter color="white" />
@@ -27,23 +27,27 @@ export default function Footer() {
         </div>
 
         <div className={styles.col2}>
-          <Link className={styles.link} to="/">
+          <Link className={`${styles.link} hidden`} to="/">
             home
           </Link>
-          <Link className={styles.link} to="/stories">
+          <Link className={`${styles.link} hidden`} to="/stories">
             stories
           </Link>
-          <Link className={styles.link} to="/features">
+          <Link className={`${styles.link} hidden`} to="/features">
             features
           </Link>
-          <Link className={styles.link} to="/pricing">
+          <Link className={`${styles.link} hidden`} to="/pricing">
             pricing
           </Link>
         </div>
         <div className={styles.col3}>
-          <Button isDark={false} buttonText="get an invite" />
+          <span className="hidden">
+            <Button isDark={false} buttonText="get an invite" />
+          </span>
 
-          <p>Copyright 2019. All Rights Reserved</p>
+          <div className="hidden">
+            <p>Copyright 2019. All Rights Reserved</p>
+          </div>
         </div>
       </div>
     </>

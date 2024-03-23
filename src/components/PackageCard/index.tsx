@@ -28,26 +28,30 @@ export default function PackageCard({
       <div className={isDark ? styles.darkContainer : styles.lightContainer}>
         <div className={styles.coloredLine}></div>
         <div className={styles.packageInfo}>
-          <div>
+          <div className="hidden">
             <h2>{title}</h2>
           </div>
 
-          <div className={styles.description}>
+          <div className={`${styles.description} hidden`}>
             <p>{description}</p>
           </div>
 
           {screenWidth <= 1250 && (
-            <Button buttonText="pick plan" isDark={isDark} />
+            <span className="hidden">
+              <Button buttonText="pick plan" isDark={isDark} />
+            </span>
           )}
         </div>
 
         <div className={styles.priceContainer}>
-          <p className={styles.price}>{price}</p>
-          <p className={styles.time}>{duration}</p>
+          <p className={`${styles.price} hidden`}>{price}</p>
+          <p className={`${styles.time} hidden`}>{duration}</p>
         </div>
 
         {screenWidth >= 1250 && (
-          <Button buttonText="pick plan" isDark={isDark} />
+          <span className="hidden">
+            <Button buttonText="pick plan" isDark={isDark} />
+          </span>
         )}
       </div>
     </>

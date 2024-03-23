@@ -11,10 +11,55 @@ html {
   padding: 0px;
   box-sizing: border-box; /* Add this line to include border-box */
   line-height: 1.5;
+  /* overflow-x: hidden; */
 }
 
 p,
 th,
 td {
   font-size: 14px;
+}
+
+.hidden-fadeIn,
+.hidden {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.slideUp {
+  opacity: 1;
+  animation: slideUp 2s forwards;
+  animation-iteration-count: 1;
+}
+
+.slideDown {
+  opacity: 1;
+  animation: slideDown 2s forwards;
+  animation-iteration-count: 1;
+}
+
+.fadeIn {
+  opacity: 1;
+}
+
+/* .slideInFromLeft {
+  animation: slideRight 2s forwards;
+} */
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }

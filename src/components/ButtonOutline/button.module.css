@@ -42,3 +42,21 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+.arrowBtn {
+  transition: 0.5s ease;
+}
+
+.arrowBtn:hover {
+  animation: arrowBtn 0.5s ease infinite alternate;
+}
+
+@keyframes arrowBtn {
+    0% {
+        transform: translateX(-2px);
+    }
+
+    100% {
+        transform: translateX(2px);
+    }
+}

@@ -12,10 +12,10 @@ export default function Feature({
   return (
     <>
       <div className={styles.container}>
-        <img className={styles.image} src={image} alt="" />
+        <img className={`${styles.image} hidden`} src={image} alt="" />
         <div>
-          <h2>{title}</h2>
-          <p>{description}</p>
+          <h2 className="hidden">{title}</h2>
+          <p className="hidden">{description}</p>
         </div>
       </div>
     </>

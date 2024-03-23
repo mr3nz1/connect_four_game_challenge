@@ -13,7 +13,7 @@ export default function Button({
     <>
       <button className={isDark ? styles.btn_dark : styles.btn}>
         <span>{buttonText}</span>
-        <Arrow color={isDark ? "black" : "white"} />
+          <Arrow color={isDark ? "black" : "white"} />
       </button>
     </>
   );
